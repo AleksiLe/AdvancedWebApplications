@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello world</h1>
+    <input type="text" id="input-text" name="data">
+    <button id="submit-data">Send</button>
+    
+
+    <script>
+        const button = document.getElementById('submit-data');
+        const input = document.getElementById('input-text');
+
+        button.addEventListener('click', () => {
+            const data = input.value;
+            console.log(data);
+
+            fetch('http://localhost:3000/list', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({data})
+            }).then(response => response.json())
+        });
+    </script>
+
+</body>
+</html>

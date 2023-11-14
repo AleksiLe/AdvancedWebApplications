@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title} Here you can add your tasks
+  input(type="text" id="input-name" placeholder="Enter your name")
+  input(type="text" id="input-task" placeholder="Enter task")
+  button(id="submit-data" type="submit") Click me
+  p(id="status") Moi
+  p Here you can find your tasks with your name 
+  input(type="text" id="search-name" placeholder="Enter your name")
+  button(id="search" type="submit") Click me
+  div(id="result")
+
+
+
