@@ -4,8 +4,10 @@ block content
   nav 
     div(class="nav-wrapper")
       a(href="#" class="brand-logo") Recipes
+      input(type='search' id='search-input' placeholder='Search')
+      
 
-  p Welcome to #{title} app
+  p Welcome to recipe app
   div(id='container' class='container')
     div(id='recept' class='col')
     div(class='col')
@@ -15,6 +17,10 @@ block content
       button(id='add-ingredient' type='button' class='btn') Add ingredient
       h4 instructions
       textarea(id='instructions-text')
-      button(id='add-instruction' type='button' class='btn') Add instruction 
+      button(id='add-instruction' type='button' class='btn') Add instruction
       input(id='image-input' type='file')
+      div(id='category-select' class='collection')
+
       button(id='submit' type='submit' class='btn') Submit
+
+
