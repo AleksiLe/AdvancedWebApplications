@@ -1,0 +1,20 @@
+{
+  "register": "Rekisteröidy",
+  "login": "Kirjaudu",
+  "logout": "Kirjaudu ulos",
+  "type message here": "Kirjoita viesti tähän",
+  "me": "Minä",
+  "login again": "Kirjaudu uudelleen",
+  "logged out": "Sinut kirjattiin ulos",
+  "email": "Sähköposti",
+  "password": "Salasana",
+  "username": "Käyttäjätunnus",
+  "profile picture": "Profiili kuva",
+  "no more new users": "Ei enempää uusia käyttäjiä",
+  "edit your profile": "Muokkaa profiiliasi",
+  "please fill all fields": "täytä kaikki kentät",
+  "edit": "Muokkaa",
+  "profile edited": "Profiili päivitetty",
+  "email already in use": "Sähköposti on jo käytössä",
+  "login failed": "Kirjautuminen epäonnistui"
+}
