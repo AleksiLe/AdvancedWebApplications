@@ -16,5 +16,7 @@
   "edit": "Muokkaa",
   "profile edited": "Profiili päivitetty",
   "email already in use": "Sähköposti on jo käytössä",
-  "login failed": "Kirjautuminen epäonnistui"
+  "login failed": "Kirjautuminen epäonnistui",
+  "register success": "Rekisteröityminen onnistui",
+  "no matches yet": "Ei vielä osumia"
 }

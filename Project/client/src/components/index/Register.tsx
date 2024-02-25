@@ -25,7 +25,7 @@ function Register() {
       .then((data: Idata) => {
         console.log(data);
         if (data.success) {
-          alert(data.success);
+          alert(t("register success"));
         } else if (data.message) {
           if (data.message === "Email already in use.") {
             alert(t("email already in use"));

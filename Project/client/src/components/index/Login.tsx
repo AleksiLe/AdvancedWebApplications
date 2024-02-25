@@ -72,7 +72,7 @@ function Login() {
       >
         <div>
           <Stack spacing={2}>
-            <h2>{t("Login")}</h2>
+            <h2>{t("login")}</h2>
             <label>
               {" "}
               {t("email")}: <input type="email" name="email" />

@@ -139,7 +139,8 @@ router.post("/edit", validateToken_1.validateToken, inputValidations_1.validateE
     }
 }));
 /*
-
+Takes login credentials and checks if the user exists in the database
+If the user exists, a jwt token is created and returned to the user
 */
 router.post("/login", inputValidations_1.validateEmail, (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
@@ -164,6 +165,9 @@ router.post("/login", inputValidations_1.validateEmail, (req, res) => __awaiter(
         return res.status(500).json({ error: "Internal Server Error" });
     }
 }));
+/*
+used to check if the user is authenticated
+*/
 router.post("/verify", validateToken_1.validateToken, (req, res) => {
     try {
         return res.json({ success: true });
@@ -173,6 +177,9 @@ router.post("/verify", validateToken_1.validateToken, (req, res) => {
         return res.json({ failure: "User not authenticated" });
     }
 });
+/*
+return image from the database
+*/
 router.get("/image/:id", validateToken_1.validateToken, (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         console.log(req.params.id);
@@ -196,6 +203,9 @@ router.get("/image/:id", validateToken_1.validateToken, (req, res) => __awaiter(
     }
 }));
 //Matching related routes
+/*
+returns potential matches for the user
+*/
 router.get("/potentialMatches", validateToken_1.validateToken, (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         console.log("user:", req.user._id + " asked for potential matches.");
@@ -217,6 +227,9 @@ router.get("/potentialMatches", validateToken_1.validateToken, (req, res) => __a
     }
     catch (error) { }
 }));
+/*
+post route to like or dislike other users
+*/
 router.post("/like", validateToken_1.validateToken, (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         if (req.user) {

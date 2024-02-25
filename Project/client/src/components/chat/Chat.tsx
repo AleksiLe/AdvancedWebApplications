@@ -158,12 +158,14 @@ function Chat() {
                   name={user.username}
                   style={conversationContentStyle}
                   lastSenderName={
+                    user.messages.length > 0 ?
                     user.messages[user.messages.length - 1].direction ===
                     "incoming"
                       ? user.username
                       : "me"
+                    : null
                   }
-                  info={user.messages[user.messages.length - 1].message}
+                  info={user.messages.length > 0 ? user.messages[user.messages.length - 1].message : ""}
                 />
               </Conversation>
             ))}
@@ -173,7 +175,7 @@ function Chat() {
           <ConversationHeader>
             <ConversationHeader.Back onClick={handleBackClick} />
             <ConversationHeader.Content
-              userName={activeUser ? activeUser.username : "No matches yet"}
+              userName={activeUser ? activeUser.username : t("no matches yet")}
               style={conversationContentStyle}
             />
             <Avatar src={activeUser ? activeUser.profilePictureURL : ""} />

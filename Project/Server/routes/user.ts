@@ -148,7 +148,8 @@ router.post(
   }
 );
 /* 
-
+Takes login credentials and checks if the user exists in the database
+If the user exists, a jwt token is created and returned to the user
 */
 router.post("/login", validateEmail, async (req: Request, res: Response) => {
   try {
@@ -179,6 +180,9 @@ router.post("/login", validateEmail, async (req: Request, res: Response) => {
   }
 });
 
+/* 
+used to check if the user is authenticated
+*/
 router.post("/verify", validateToken, (req: Request, res: Response) => {
   try {
     return res.json({ success: true });
@@ -188,6 +192,9 @@ router.post("/verify", validateToken, (req: Request, res: Response) => {
   }
 });
 
+/*
+return image from the database
+*/
 router.get("/image/:id", validateToken, async (req: Request, res: Response) => {
   try {
     console.log(req.params.id);
@@ -211,6 +218,9 @@ router.get("/image/:id", validateToken, async (req: Request, res: Response) => {
 });
 
 //Matching related routes
+/*
+returns potential matches for the user
+*/
 router.get(
   "/potentialMatches",
   validateToken,
@@ -238,7 +248,9 @@ router.get(
     } catch (error) {}
   }
 );
-
+/*
+post route to like or dislike other users
+*/ 
 router.post("/like", validateToken, async (req: Request, res: Response) => {
   try {
     if (req.user) {

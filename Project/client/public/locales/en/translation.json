@@ -16,5 +16,7 @@
   "edit": "Edit",
   "profile edited": "Profile edited",
   "email already in use": "Email already in use",
-  "login failed": "Login failed"
+  "login failed": "Login failed",
+  "register success": "Register success",
+  "no matches yet": "No matches yet"
 }
