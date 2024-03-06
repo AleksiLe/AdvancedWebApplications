@@ -1,0 +1,22 @@
+{
+  "register": "Register",
+  "login": "Login",
+  "logout": "Logout",
+  "type message here": "Type message here",
+  "me": "Me",
+  "login again": "Login again",
+  "logged out": "Logged out",
+  "email": "Email",
+  "password": "Password",
+  "username": "Username",
+  "profile picture": "Profile picture",
+  "no more new users": "No more new users",
+  "edit your profile": "Edit your profile",
+  "please fill all fields": "Please fill all fields",
+  "edit": "Edit",
+  "profile edited": "Profile edited",
+  "email already in use": "Email already in use",
+  "login failed": "Login failed",
+  "register success": "Register success",
+  "no matches yet": "No matches yet"
+}

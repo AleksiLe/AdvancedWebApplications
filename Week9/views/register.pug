@@ -1,0 +1,17 @@
+extends layout 
+
+block content 
+    p Welcome to register
+    form(method='POST', id='register-form')
+        p
+            label Email:
+            br
+            input(type='email', name='email')
+        p
+            label Password:
+            br
+            input(type='password', name='password')
+        p
+            input(type='submit', value='Register')
+        p(id="error")
+    script(src="/javascripts/register.js") 

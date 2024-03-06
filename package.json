@@ -8,8 +8,14 @@
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
-    "express": "~4.16.1",
+    "express": "^4.18.2",
     "morgan": "~1.9.1",
+    "react-router-dom": "^6.21.2",
     "tsc": "^2.0.4"
-  }
+  },
+  "description": "School Course",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
